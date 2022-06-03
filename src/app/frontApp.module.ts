@@ -4,11 +4,11 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FrontAppRoutingModule } from './frontApp-routing.module';
 import { FrontAppComponent } from './frontApp.component';
 
-import { AppNavbarModule } from '@core-nav/navigation.module';
+import { NavigationsModule } from '@core-nav/navigations.module';
 
 @NgModule({
   declarations: [FrontAppComponent],
-  imports: [BrowserModule, FrontAppRoutingModule, AppNavbarModule],
+  imports: [BrowserModule, FrontAppRoutingModule, NavigationsModule],
   bootstrap: [FrontAppComponent],
 })
 export class FrontAppModule {}

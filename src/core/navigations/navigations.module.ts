@@ -22,4 +22,4 @@ const APPNAVBAR_PERFECT_SCROLLBAR_CONFIG: PerfectScrollbarConfigInterface = {
     },
   ],
 })
-export class AppNavbarModule {}
+export class NavigationsModule {}
