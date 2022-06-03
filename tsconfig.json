@@ -4,6 +4,9 @@
   "compilerOptions": {
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
+    "paths": {
+      "@core-nav/*": ["src/core/navigations/*"]
+    },
     "forceConsistentCasingInFileNames": true,
     "strict": true,
     "noImplicitOverride": true,

@@ -5,12 +5,8 @@ import { FrontAppComponent } from './frontApp.component';
 describe('FrontAppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [
-        RouterTestingModule
-      ],
-      declarations: [
-        FrontAppComponent
-      ],
+      imports: [RouterTestingModule],
+      declarations: [FrontAppComponent],
     }).compileComponents();
   });
 
@@ -30,6 +26,8 @@ describe('FrontAppComponent', () => {
     const fixture = TestBed.createComponent(FrontAppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('Angular-Frontend app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain(
+      'Angular-Frontend app is running!'
+    );
   });
 });
