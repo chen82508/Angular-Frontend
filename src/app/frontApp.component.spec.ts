@@ -1,11 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { FrontAppComponent } from './frontApp.component';
+import { NavigationsModule } from '@core-nav/navigations.module';
 
 describe('FrontAppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [RouterTestingModule],
+      imports: [RouterTestingModule, NavigationsModule],
       declarations: [FrontAppComponent],
     }).compileComponents();
   });
