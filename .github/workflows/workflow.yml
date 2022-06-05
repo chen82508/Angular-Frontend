@@ -44,11 +44,11 @@ jobs:
 
       - name: Build
         run: |
-          npm run build --prod
+          npm run build:prod
 
-      # - name: Test
-      #   run: |
-      #     npm run test --prod
+      - name: Test
+        run: |
+          npm run test:prod
 
       - name: Conventional Changelog Action
         id: changelog

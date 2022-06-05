@@ -6,8 +6,10 @@
     "start": "ng serve",
     "start:open": "ng serve --open",
     "build": "ng build",
+    "build:prod": "ng build -c production",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
+    "test:prod": "ng test -c production",
     "deploy": "ng deploy --base-href=/Angular-Frontend/"
   },
   "private": true,
