@@ -5,7 +5,9 @@
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "paths": {
-      "@core-nav/*": ["src/core/navigations/*"]
+      "@core-nav/*": [
+        "src/core/navigations/*"
+      ]
     },
     "forceConsistentCasingInFileNames": true,
     "strict": true,

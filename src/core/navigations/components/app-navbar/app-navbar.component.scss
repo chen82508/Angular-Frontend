@@ -1,10 +1,15 @@
 .main-sidenav-sticky {
+    .sidenav-menu {
+        width: 240px;
+    }
+}
+
+.sidenav-menu {
     position: fixed;
     top: 0;
     bottom: 0;
     left: 0;
-
-    &.sidenav-menu {
-        width: 240px;
-    }
+    min-height: 100%;
+    z-index: 1001;
+    background-color: #ffD;
 }
