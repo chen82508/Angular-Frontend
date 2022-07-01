@@ -7,6 +7,8 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppHeaderComponent implements OnInit {
+  public isOpen: boolean = true;
+
   constructor() {}
 
   ngOnInit(): void {}
