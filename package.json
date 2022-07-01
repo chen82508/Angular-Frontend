@@ -10,7 +10,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
     "test:prod": "ng test -c production",
-    "deploy": "ng deploy --base-href=/Angular-Frontend/ --no-silent"
+    "deploy": "ng deploy --base-href=/Angular-Frontend/"
   },
   "private": true,
   "dependencies": {
