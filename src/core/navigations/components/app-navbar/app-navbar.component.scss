@@ -17,3 +17,53 @@
 .main-sidenav-header {
     height: 64px;
 }
+
+.sidenav-body {
+    height: calc(100% - 128px);
+}
+
+.sidenav-footer {
+    height: 64px;
+}
+
+.p-scrollpanel {
+    p {
+        padding: .5rem;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    &.custombar1 {
+        .p-scrollpanel-wrapper {
+            border-right: 9px solid var(--layer-1);
+        }
+
+        .p-scrollpanel-bar {
+            background-color: var(--yellow-200);
+            border-radius: 8px;
+            // opacity: 1;
+            // transition: background-color .2s;
+
+            &:hover {
+                background-color: var(--yellow-300);
+            }
+        }
+        .p-scrollpanel-bar-y {
+            width: 8px;
+        }
+    }
+
+    // &.custombar2 {
+    //     .p-scrollpanel-wrapper {
+    //         border-right: 9px solid var(--layer-1);
+    //         border-bottom: 9px solid var(--layer-1);
+    //     }
+
+    //     .p-scrollpanel-bar {
+    //         background-color: var(--layer-2);
+    //         border-radius: 0;
+    //         opacity: 1;
+    //         transition: background-color .2s;
+    //     }
+    // }
+}

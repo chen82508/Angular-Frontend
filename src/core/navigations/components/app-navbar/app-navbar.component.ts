@@ -1,5 +1,4 @@
-import { Component, Inject, OnInit, ViewEncapsulation } from '@angular/core';
-import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
+import { Component, OnInit, ViewEncapsulation } from '@angular/core';
 
 @Component({
   selector: 'app-navbar',
@@ -8,9 +7,7 @@ import { PerfectScrollbarConfigInterface } from 'ngx-perfect-scrollbar';
   encapsulation: ViewEncapsulation.None,
 })
 export class AppNavbarComponent implements OnInit {
-  constructor(
-    @Inject('PS_CONFIG') public config: PerfectScrollbarConfigInterface
-  ) {}
+  constructor() {}
 
   ngOnInit(): void {}
 }

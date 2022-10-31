@@ -1,17 +1,19 @@
 <div class="main-sidenav-sticky">
     <aside class="sidenav-menu">
-        <p>App navigation bar works!</p>
-        <!-- <div class="main-sidenav-header">
-            <a href="#" title="Home Page">
+        <div class="main-sidenav-header">
+            <p>App navigation bar works!</p>
+            
+            <!-- <a href="#" title="Home Page">
                 <img src="" alt="Home Page Logo">
-            </a>
-        </div> -->
-        <perfect-scrollbar>
-            <div class="ps" style="position: static;">
-                <div class="ps-content">
-                    <p>Scroll region works!</p>
-                </div>
-            </div>
-        </perfect-scrollbar>
+            </a> -->
+        </div>
+        <div class="sidenav-body">
+            <p-scrollPanel [style]="{height: '100%'}" styleClass="custombar1">
+                <p>Here is scroll panel of PrimeNG.</p>
+            </p-scrollPanel>
+        </div>
+        <div class="sidenav-footer">
+            Here is side nav footer.
+        </div>
     </aside>
 </div>
