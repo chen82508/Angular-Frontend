@@ -1,1 +1,21 @@
-<div class="login-wrapper"></div>
+<div class="h-screen w-screen">
+    <div class="bg-gradient-to-br from-lime-300/60 to-emerald-600/60">
+        <section class="p-4 flex flex-col justify-center min-h-screen max-w-md mx-auto">
+            <div class="p-6 bg-sky-100/60 rounded-md">
+                <div class="flex items-center justify-center font-medium m-3 mb-10">
+                    <p-image src="../../../assets/icons8-bitcoin-64.png" class="mr-3" alt="login icon" width="40">
+                    </p-image>
+                    <h1 class="tracking-wide text-3xl text-gray-700">login-v1 works!</h1>
+                </div>
+                <div class="p-input-icon-left w-full mt-1 mb-3">
+                    <i class="pi pi-user"></i>
+                    <input type="text" pInputText placeholder="User name" class="w-full">
+                </div>
+                <div class="p-input-icon-left w-full mt-1 mb-3">
+                    <i class="pi pi-lock"></i>
+                    <input type="password" pPassword placeholder="Password" class="w-full" [(ngModel)]="password">
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
