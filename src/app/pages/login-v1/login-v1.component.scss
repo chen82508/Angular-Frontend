@@ -1,14 +1,59 @@
 .login-wrapper {
     width: 100vw;
     height: 100vh;
-    // background: var(--green-100);
 }
 
-.p-inputtext {
+:host ::ng-deep .p-inputtext {
     @apply p-2 pl-10 rounded-lg transition-all duration-300 ease-in-out;
 
     &:enabled:focus {
         @apply border-emerald-800/60 border caret-teal-700/60;
         box-shadow: 0 0 0 1px var(--green-300);
+    }
+}
+
+.field-checkbox {
+    @apply flex items-center;
+
+    >label {
+        @apply ml-2 text-gray-600 select-none leading-none;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -o-user-select: none;
+    }
+}
+
+:host ::ng-deep .p-checkbox {
+    .p-checkbox-box {
+        &.p-highlight {
+            background: var(--green-500);
+            @apply border-green-500;
+        }
+    }
+
+    &:not(.p-checkbox-disabled) {
+        &.p-checkbox-focused {
+            .p-checkbox-box {
+                &.p-focus {
+                    outline: 0 none;
+                    box-shadow: 0 0 0 2px #FFFFFF, 0 0 0 4px var(--green-400), 0 1px 2px 0 rgba(0, 0, 0, 0);
+                    @apply outline-offset-0 border-green-500;
+                }
+            }
+        }
+        .p-checkbox-box {
+            &.p-focus {
+                outline: 0 none;
+                @apply border-green-500;
+                box-shadow: 0 0 0 1px var(--green-300);
+            }
+
+            &.p-highlight {
+                &:hover {
+                    color: #FFFFFF;
+                    @apply bg-green-500 border-green-500;
+                }
+            }
+        }
     }
 }

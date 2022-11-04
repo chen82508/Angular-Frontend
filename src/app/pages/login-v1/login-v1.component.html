@@ -1,7 +1,7 @@
 <div class="h-screen w-screen">
     <div class="bg-gradient-to-br from-lime-300/60 to-emerald-600/60">
         <section class="p-4 flex flex-col justify-center min-h-screen max-w-md mx-auto">
-            <div class="p-6 bg-sky-100/60 rounded-md">
+            <form class="p-6 bg-sky-100/60 rounded-md">
                 <div class="flex items-center justify-center font-medium m-3 mb-10">
                     <p-image src="assets/icons8-bitcoin-64.png" class="mr-3" alt="login icon" width="40">
                     </p-image>
@@ -9,13 +9,20 @@
                 </div>
                 <div class="p-input-icon-left w-full mt-1 mb-3">
                     <i class="pi pi-user"></i>
-                    <input type="text" pInputText placeholder="User name" class="w-full">
+                    <input type="text" pInputText placeholder="Account" class="w-full" name="account">
                 </div>
-                <div class="p-input-icon-left w-full mt-1 mb-3">
-                    <i class="pi pi-lock"></i>
-                    <input type="password" pPassword placeholder="Password" class="w-full" [(ngModel)]="password" [feedback]="false">
+                <div class="mt-1 mb-3">
+                    <div class="p-input-icon-left w-full">
+                        <i class="pi pi-lock"></i>
+                        <input type="password" pPassword placeholder="Password" class="w-full" name="password" [(ngModel)]="password" [feedback]="false">
+                    </div>
+                    <a class="inline-block align-baseline text-sm text-gray-600 hover:text-gray-800"href="/forgot">Forgot Password?</a>
                 </div>
-            </div>
+                <div class="field-checkbox p-1 w-full mt-1 mb-3">
+                    <p-checkbox inputId="remember-me" [binary]="true" name="remember-me" [(ngModel)]="rememberMe"></p-checkbox>
+                    <label for="remember-me">Remember me.</label>
+                </div>
+            </form>
         </section>
     </div>
 </div>

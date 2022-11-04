@@ -1,10 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-// import { BrowserModule } from "@angular/platform-browser";
-// import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
-import { FormsModule } from "@angular/forms";
+import { FormsModule } from '@angular/forms';
+import { CheckboxModule } from 'primeng/checkbox';
 import { ImageModule } from 'primeng/image';
-import { InputTextModule } from "primeng/inputtext";
-import { PasswordModule } from "primeng/password";
+import { InputTextModule } from 'primeng/inputtext';
+import { PasswordModule } from 'primeng/password';
 
 @Component({
   selector: 'frnt-login-v1',
@@ -14,10 +13,17 @@ import { PasswordModule } from "primeng/password";
     class: 'login-cpnt',
   },
   standalone: true,
-  imports: [FormsModule, ImageModule, InputTextModule, PasswordModule],
+  imports: [
+    CheckboxModule,
+    FormsModule,
+    ImageModule,
+    InputTextModule,
+    PasswordModule,
+  ],
 })
 export class LoginV1Component implements OnInit {
-  password: string = '';
+  public password: string = '';
+  public rememberMe: boolean = false;
 
   constructor() {}
 
