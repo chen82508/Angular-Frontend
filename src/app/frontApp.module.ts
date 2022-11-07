@@ -20,4 +20,4 @@ import { PasswordModule } from 'primeng/password';
   ],
   bootstrap: [FrontAppComponent],
 })
-export class FrontAppModule {}
+export class FrontAppModule { }

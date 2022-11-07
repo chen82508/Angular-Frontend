@@ -14,13 +14,22 @@
                 <div class="mt-1 mb-3">
                     <div class="p-input-icon-left w-full">
                         <i class="pi pi-lock"></i>
-                        <input type="password" pPassword placeholder="Password" class="w-full" name="password" [(ngModel)]="password" [feedback]="false">
+                        <input type="password" pPassword placeholder="Password" class="w-full" name="password"
+                            [(ngModel)]="password" [feedback]="false">
                     </div>
-                    <a class="inline-block align-baseline text-sm text-gray-600 hover:text-gray-800"href="/forgot">Forgot Password?</a>
+                    <div class="px-1 mt-1.5 text-right">
+                        <a class="inline-block align-baseline text-sm text-gray-600 hover:text-gray-900"
+                            href="javascript:void(0)">Forgot Password?</a>
+                    </div>
                 </div>
-                <div class="field-checkbox p-1 w-full mt-1 mb-3">
-                    <p-checkbox inputId="remember-me" [binary]="true" name="remember-me" [(ngModel)]="rememberMe"></p-checkbox>
+                <div class="field-checkbox p-1 mt-1 mb-3 w-full">
+                    <p-checkbox inputId="remember-me" [binary]="true" name="remember-me" [(ngModel)]="rememberMe">
+                    </p-checkbox>
                     <label for="remember-me">Remember me.</label>
+                </div>
+                <div class="mt-1">
+                    <button pRipple type="button"
+                        class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-green-500 to-cyan-500 text-white w-full">Login</button>
                 </div>
             </form>
         </section>

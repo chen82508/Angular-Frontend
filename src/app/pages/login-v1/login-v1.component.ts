@@ -1,9 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { CheckboxModule } from 'primeng/checkbox';
-import { ImageModule } from 'primeng/image';
-import { InputTextModule } from 'primeng/inputtext';
-import { PasswordModule } from 'primeng/password';
+import { PrimeNGConfig } from "primeng/api";
+import { LoginV1Module } from './login-v1.module';
 
 @Component({
   selector: 'frnt-login-v1',
@@ -13,19 +11,15 @@ import { PasswordModule } from 'primeng/password';
     class: 'login-cpnt',
   },
   standalone: true,
-  imports: [
-    CheckboxModule,
-    FormsModule,
-    ImageModule,
-    InputTextModule,
-    PasswordModule,
-  ],
+  imports: [FormsModule, LoginV1Module],
 })
 export class LoginV1Component implements OnInit {
   public password: string = '';
   public rememberMe: boolean = false;
 
-  constructor() {}
+  constructor(private primengConfig: PrimeNGConfig) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.primengConfig.ripple = true;
+  }
 }
