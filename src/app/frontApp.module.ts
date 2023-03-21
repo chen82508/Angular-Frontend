@@ -18,6 +18,7 @@ import { PasswordModule } from 'primeng/password';
     NavigationsModule,
     PasswordModule,
   ],
+  exports:[NavigationsModule],
   bootstrap: [FrontAppComponent],
 })
-export class FrontAppModule { }
+export class FrontAppModule {}
