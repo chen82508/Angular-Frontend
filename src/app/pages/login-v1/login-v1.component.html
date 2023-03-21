@@ -9,7 +9,7 @@
                 </div>
                 <div class="p-input-icon-left w-full mt-1 mb-3">
                     <i class="pi pi-user"></i>
-                    <input type="text" pInputText placeholder="Account" class="w-full" name="account">
+                    <input type="text" pInputText placeholder="Account" class="w-full" name="account" [(ngModel)]="account">
                 </div>
                 <div class="mt-1 mb-3">
                     <div class="p-input-icon-left w-full">
@@ -28,8 +28,10 @@
                     <label for="remember-me">Remember me.</label>
                 </div>
                 <div class="mt-1">
+                    <!-- <button pRipple type="button"
+                        class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-green-500 hover:from-green-400 to-cyan-500 hover:to-cyan-400 text-white w-full">Login</button> -->
                     <button pRipple type="button"
-                        class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-green-500 to-cyan-500 text-white w-full">Login</button>
+                        class="px-4 py-1.5 rounded-md shadow-lg bg-gradient-to-r from-green-500 hover:from-green-400 to-cyan-500 hover:to-cyan-400 text-white w-full">Login</button>
                 </div>
             </form>
         </section>

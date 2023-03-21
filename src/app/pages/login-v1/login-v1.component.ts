@@ -14,6 +14,7 @@ import { LoginV1Module } from './login-v1.module';
   imports: [FormsModule, LoginV1Module],
 })
 export class LoginV1Component implements OnInit {
+  public account: string = '';
   public password: string = '';
   public rememberMe: boolean = false;
 
